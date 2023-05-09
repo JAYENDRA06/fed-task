@@ -1,9 +1,9 @@
 import React from "react";
 
-function VideoList({ videoList }) {
+function VideoList({ videoList, setVideoTitle }) {
 
     const videos = videoList.map((video) => (
-        <li className="list-group-item bg-dark text-light">{video.title}</li>
+        <li className="list-group-item bg-dark text-light" onClick={() => setVideoTitle(video.title)}>{video.title}</li>
     ))
   return (
     <ul className="list-group">

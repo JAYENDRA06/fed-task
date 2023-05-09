@@ -4,7 +4,7 @@ import InputBox from "./subComponents/InputBox";
 import CourseVideoList from "./CourseVideoList";
 import SummaryBtn from "./subComponents/SummaryBtn";
 
-function RightSection() {
+function RightSection({setVideoTitle}) {
   return (
     <div className="container-fluid h-100">
       <div className="row h-15">
@@ -15,7 +15,7 @@ function RightSection() {
       </div>
       <div className="row h-70">
         <div className="col-sm-12">
-          <CourseVideoList />
+          <CourseVideoList setVideoTitle={setVideoTitle} />
         </div>
       </div>
       <div className="row h-15">

@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./subComponents/Accordion";
 
-function CourseVideoList() {
+function CourseVideoList({setVideoTitle}) {
 
   const Chapters = [
     {
@@ -74,7 +74,7 @@ function CourseVideoList() {
   return (
     <div className="accordion" id="accordionExample" style={{overflowY: "scroll", height: 450}}>
       {Chapters.map((chapter) => {
-        return <Accordion chapter = {chapter} key={chapter.key} />;
+        return <Accordion chapter = {chapter} key={chapter.key} setVideoTitle={setVideoTitle} />;
       })}
     </div>
   );

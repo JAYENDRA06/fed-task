@@ -1,7 +1,7 @@
 import React from "react";
 import VideoList from "./VideoList";
 
-function Accordion({ chapter }) {
+function Accordion({ chapter, setVideoTitle }) {
   const { key, title, time, videoList } = chapter;
   const id = "#collapse" + key;
   const ids = "collapse"+key;
@@ -26,7 +26,7 @@ function Accordion({ chapter }) {
         data-bs-parent="#accordionExample"
       >
         <div className="accordion-body">
-          <VideoList videoList = {videoList}/>
+          <VideoList videoList = {videoList} setVideoTitle={setVideoTitle}/>
         </div>
       </div>
     </div>
