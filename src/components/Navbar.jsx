@@ -44,7 +44,7 @@ function Navbar() {
             Enroll Now
           </button>
           <a className="nav-link" href="#">
-            <img src={imageLink} className="ml-5 rounded-circle" width="40" height="40" alt="Profile Picture" />
+            <img src={imageLink} className="rounded-circle" width="40" height="40" alt="Profile Picture" />
           </a>
         </div>
       </div>

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  font-family: 'Montserrat', sans-serif;  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
   font-weight: 400;
 
   /* color-scheme: light dark;
@@ -22,7 +23,7 @@
     #333399 51%,
     #ff00cc 100%
   );
-  margin: 10px;
+  margin: 10px 15px 10px 0;
   padding: 10px 30px;
   text-align: center;
   transition: 1s;
@@ -35,7 +36,6 @@
 .btn-custom:hover {
   background-position: right center;
   color: #fff;
-  text-decoration: none;
 }
 
 .text-gradient {
@@ -77,4 +77,20 @@ video {
   background-color: #6e6eff;
   border-color: #6e6eff;
   color: black;
+}
+
+.progress {
+  background-color: "black";
+  min-width: 300px;
+  height: 7px;
+}
+
+.progress-bar {
+  width: 100px;
+  background-color: #8c8cff;
+  border-radius: 5px;
+}
+
+.btn-summary {
+  width: 100%;
 }
