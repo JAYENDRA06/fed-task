@@ -79,6 +79,13 @@ video {
   color: black;
 }
 
+@media only screen and (max-width: 576px) {
+  .video-btn, .video-btn-outlined {
+    font-size: 0.8rem;
+    padding: 0px 10px !important;
+  }
+}
+
 .progress {
   background-color: "black";
   min-width: 300px;
