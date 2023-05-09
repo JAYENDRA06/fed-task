@@ -1,11 +1,12 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: 'Montserrat', sans-serif;  line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,56 +15,66 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.btn-custom {
+  background-image: linear-gradient(
+    to right,
+    #ff00cc 0%,
+    #333399 51%,
+    #ff00cc 100%
+  );
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 1s;
+  border: 0px;
+  background-size: 200% auto;
+  color: white;
+  display: block;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.btn-custom:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.text-gradient {
+  background: linear-gradient(to right, #ff23d3 0%, #8c8cff 51%, #ff23d3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.video-btn-outlined {
+  padding: 7px 20px;
+  margin-left: 20px;
+  border-color: #8c8cff;
+  color: #8c8cff;
+}
+
+.video-btn-outlined:hover {
+  background-color: #8c8cff;
+  border-color: #8c8cff;
+  color: black;
+}
+
+.video-btn {
+  padding: 7px 20px;
+  margin-left: 20px;
+  background-color: #8c8cff;
+  border-color: #8c8cff;
+  color: black;
+}
+
+.video-btn:hover {
+  padding: 7px 20px;
+  margin-left: 20px;
+  background-color: #6e6eff;
+  border-color: #6e6eff;
+  color: black;
 }
