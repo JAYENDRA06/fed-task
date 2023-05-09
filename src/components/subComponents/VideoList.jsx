@@ -1,45 +1,14 @@
 import React from "react";
 
-function VideoList() {
+function VideoList({ videoList }) {
+
+    const videos = videoList.map((video) => (
+        <li className="list-group-item bg-dark text-light">{video.title}</li>
+    ))
   return (
-    <>
-      <div className="form-check">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="item1"
-          disabled
-        />
-        <label className="form-check-label" htmlFor="item1">
-          Item 1
-        </label>
-      </div>
-      <div className="form-check">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="item2"
-          disabled
-        />
-        <label className="form-check-label" htmlFor="item2">
-          Item 2
-        </label>
-      </div>
-      <div className="form-check">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="item3"
-          disabled
-        />
-        <label className="form-check-label" htmlFor="item3">
-          Item 3
-        </label>
-      </div>
-    </>
+    <ul className="list-group">
+      {videos}
+    </ul>
   );
 }
 

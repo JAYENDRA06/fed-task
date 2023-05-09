@@ -11,8 +11,15 @@ function CourseVideoList() {
       videoList: [
         {
           id: 100,
-          title: "Welcome Module",
-          list: ["Welcome to Complete Web Development Course"]
+          title: "Welcome to Complete Web Development Course"
+        },
+        {
+          id: 10320,
+          title: "Welco4242lete Web Development Course"
+        },
+        {
+          id: 10230,
+          title: "We32Complete Web Development Course"
         }
       ]
     },
@@ -23,8 +30,7 @@ function CourseVideoList() {
       videoList: [
         {
           id: 200,
-          title: "Welcome Module",
-          list: ["Welcome to Complete Web Development Course"]
+          title: "Welcome to Complete Web Development Course"
         }
       ]
     },
@@ -35,8 +41,7 @@ function CourseVideoList() {
       videoList: [
         {
           id: 300,
-          title: "Welcome Module",
-          list: ["Welcome to Complete Web Development Course"]
+          title: "Welcome to Complete Web Development Course"
         }
       ]
     },
@@ -47,8 +52,7 @@ function CourseVideoList() {
       videoList: [
         {
           id: 400,
-          title: "Welcome Module",
-          list: ["Welcome to Complete Web Development Course"]
+          title: "Welcome to Complete Web Development Course"
         }
       ]
     },
@@ -59,8 +63,7 @@ function CourseVideoList() {
       videoList: [
         {
           id: 500,
-          title: "Welcome Module",
-          list: ["Welcome to Complete Web Development Course"]
+          title: "Welcome to Complete Web Development Course"
         }
       ]
     },

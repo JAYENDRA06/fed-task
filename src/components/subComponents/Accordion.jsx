@@ -1,5 +1,5 @@
 import React from "react";
-import InnerAccordion from "./InnerAccordion";
+import VideoList from "./VideoList";
 
 function Accordion({ chapter }) {
   const { key, title, time, videoList } = chapter;
@@ -13,7 +13,6 @@ function Accordion({ chapter }) {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={id}
-          aria-controls={ids}
         >
           <div className="d-flex flex-column">
             <h6>{title}</h6>
@@ -27,7 +26,7 @@ function Accordion({ chapter }) {
         data-bs-parent="#accordionExample"
       >
         <div className="accordion-body">
-          <InnerAccordion videoList = {videoList} id = {id} />
+          <VideoList videoList = {videoList}/>
         </div>
       </div>
     </div>
